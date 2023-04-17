@@ -48,12 +48,14 @@ def bigboard_scrape(year, league = 'NFL'):
     element = WebDriverWait(driver, 10).until(
         EC.all_of(
             EC.invisibility_of_element_located((By.CLASS_NAME, 'recalculating')),
-            EC.visibility_of_element_located((By.CLASS_NAME, 'rt-page-size-select')),
+            EC.visibility_of_element_located((By.CLASS_NAME,
+                                              'rt-page-size-select')),
             EC.element_to_be_clickable((By.CLASS_NAME, 'rt-tr-group'))
         )
     )
     #show max number of rows to minimize number of page changes
-    rows_dropdown = Select(driver.find_element(By.CLASS_NAME, 'rt-page-size-select'))
+    rows_dropdown = Select(driver.find_element(By.CLASS_NAME,
+                                               'rt-page-size-select'))
     rows_dropdown.select_by_value("200")
     #get column names
     element = WebDriverWait(driver, 10).until(
