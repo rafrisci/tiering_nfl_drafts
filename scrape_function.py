@@ -1,5 +1,6 @@
+#!/usr/bin/env python3
 """
-bigboard_scrape scrapes the information from jacklich10.xyz concensus big boards
+big_board_scrape scrapes the information from jacklich10.xyz concensus big boards
 and returns it as a pandas df. It requires the year and league of the big board.
 """
 from selenium import webdriver
@@ -10,7 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 import pandas as pd
 
 
-def bigboard_scrape(year, league = 'NFL'):
+def big_board_scrape(year, league = 'NFL'):
     """
     Get the draft big boards from jacklich10.xyz for either the NFL or NBA.
 

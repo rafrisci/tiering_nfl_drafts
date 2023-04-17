@@ -1,3 +1,5 @@
 {
-    "jupyter.interactiveWindow.textEditor.executeSelection": true
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "jupyter.themeMatplotlibPlots": true
 }
