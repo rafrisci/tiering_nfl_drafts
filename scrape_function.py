@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 big_board_scrape scrapes the information from jacklich10.xyz concensus big boards
 and returns it as a pandas df. It requires the year and league of the big board.
