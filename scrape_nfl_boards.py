@@ -10,4 +10,4 @@ path = os.getcwd()
 league = 'NFL'
 for year in range(2016, 2024):
     df = big_board_scrape(year, league)
-    df.to_csv(os.path.join(path, f'big_boards\\{year}_big_board.csv'))
+    df.to_csv(os.path.join(path, f'data\\big_boards\\{year}_big_board.csv'))
