@@ -1,5 +1,5 @@
 """
-big_board_scrape scrapes the information from jacklich10.xyz concensus big boards
+big_board_scrape scrapes the information from jacklich10.com concensus big boards
 and returns it as a pandas df. It requires the year and league of the big board.
 """
 from selenium import webdriver
@@ -32,7 +32,7 @@ def big_board_scrape(year, league = 'NFL'):
                          'are the NBA and NFL.')
     #initiate driver
     driver = webdriver.Chrome()
-    driver.get(f"https://jacklich10.xyz/bigboard/{league}/")
+    driver.get(f"https://jacklich10.com/bigboard/{league}/")
     #filter by year selected
     parent_filters = driver.find_element(By.CLASS_NAME, 'well')
     filters = parent_filters.find_elements(By.CLASS_NAME, 'row')

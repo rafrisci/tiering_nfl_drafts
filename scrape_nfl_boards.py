@@ -1,6 +1,6 @@
 """
 Use the big_board_scrape function in scrape_function.py to pull all NFL big boards
-on jacklich10.xyz
+on jacklich10.com
 """
 from scrape_function import big_board_scrape
 import os
